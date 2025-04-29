@@ -1,0 +1,17 @@
+name: Hello World Workflow
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Say Hello
+      run: echo "Hello, Gtihub Actions!"
+    
+    - name: Show date
+      run: date
